@@ -9,8 +9,8 @@ build-webapp:
 
 build-cli:
   script:
-  - docker build -t hub.service.leandev.com/mojito-cli -f docker/Dockerfile-cli-bk8 .
-  - docker push hub.service.leandev.com/mojito-cli
+  - docker build -t hub.service.leandev.com/mirror/mojito-cli -f docker/Dockerfile-cli-bk8 .
+  - docker push hub.service.leandev.com/mirror/mojito-cli
   only:
   - master
   tags:

@@ -1,4 +1,5 @@
 > Ported to gitlab for tracing, used to build images for mojito services in vilja
+> Images are pushed to `hub.service.leandev.com/mirror/mojito-cli` and `hub.service.leandev.com/mirror/mojito-webapp`
 
 Mojito 
 ====

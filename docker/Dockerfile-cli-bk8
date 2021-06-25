@@ -16,9 +16,9 @@ VOLUME /tmp
 
 ENV MOJITO_BIN=/usr/local/mojito/bin
 ENV PATH $PATH:${MOJITO_BIN}
-ENV MOJITO_HOST=localhost
-ENV MOJITO_SCHEME=http
-ENV MOJITO_PORT=8080
+ENV MOJITO_HOST=mojito.service.leandev.com
+ENV MOJITO_SCHEME=https
+ENV MOJITO_PORT=443
 
 
 COPY --from=build /mnt/mojito/cli/target/mojito-cli-*-exec.jar ${MOJITO_BIN}/mojito-cli.jar

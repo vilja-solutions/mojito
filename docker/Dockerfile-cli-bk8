@@ -32,4 +32,4 @@ java -Dl10n.resttemplate.host=\${MOJITO_HOST} \\\\\n \
      -jar $MOJITO_BIN/mojito-cli.jar \"\${@}\"" \
     >> /usr/local/mojito/bin/mojito && chmod +x $MOJITO_BIN/mojito
 
-ENTRYPOINT exec mojito
+# ENTRYPOINT exec mojito

@@ -1,0 +1,17 @@
+build-webapp:
+  script:
+  - docker build -t hub.service.leandev.com/mirror/mojito-webapp -f docker/Dockerfile-bk8 .
+  - docker push hub.service.leandev.com/mirror/mojito-webapp
+  only:
+  - master
+  tags:
+  - docker-env
+
+build-cli:
+  script:
+  - docker build -t hub.service.leandev.com/mojito-cli -f docker/Dockerfile-cli-bk8 .
+  - docker push hub.service.leandev.com/mojito-cli
+  only:
+  - master
+  tags:
+  - docker-env
